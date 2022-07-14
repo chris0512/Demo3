@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mvh-pt-Xq6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21191"/>
@@ -8,6 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qw3-q6-Wta">
+            <objects>
+                <tabBarController id="Mvh-pt-Xq6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mIB-2t-TUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5nQ-js-91x" kind="relationship" relationship="viewControllers" id="z7o-oT-VF3"/>
+                        <segue destination="tfe-ui-VvT" kind="relationship" relationship="viewControllers" id="zdq-Cw-q4a"/>
+                        <segue destination="dPu-1e-kHq" kind="relationship" relationship="viewControllers" id="UAp-8Z-q2J"/>
+                        <segue destination="BW3-Nb-qDw" kind="relationship" relationship="viewControllers" id="1td-ep-huv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2a-6E-ThX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-7"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,14 +39,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arcane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WM-KT-e7k">
-                                <rect key="frame" x="145.5" y="162" width="123" height="48"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77P-EY-wEN">
-                                <rect key="frame" x="52" y="373" width="46" height="44"/>
+                                <rect key="frame" x="52" y="356" width="46" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Vi">
@@ -34,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01W-44-Mfj" userLabel="caitlyn">
-                                <rect key="frame" x="271" y="373" width="102" height="44"/>
+                                <rect key="frame" x="271" y="356" width="102" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Caitlyn">
@@ -45,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo9-Ew-E7C">
-                                <rect key="frame" x="102" y="481" width="78" height="44"/>
+                                <rect key="frame" x="82" y="697" width="78" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ekko">
@@ -56,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVz-xd-I9T">
-                                <rect key="frame" x="217" y="481" width="90" height="44"/>
+                                <rect key="frame" x="240" y="697" width="90" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Jacey">
@@ -67,7 +84,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uis-eV-O9a" userLabel="Jinx">
-                                <rect key="frame" x="153" y="373" width="69.5" height="44"/>
+                                <rect key="frame" x="163" y="356" width="69.5" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -75,125 +92,184 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="boM-9H-hh8" kind="show" id="aEd-Eb-Ef7"/>
+                                    <segue destination="XBi-m4-yX0" kind="show" id="FWr-TI-M7K"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WM-KT-e7k">
+                                <rect key="frame" x="155" y="97" width="104" height="48"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vi_head" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-s0-djQ">
+                                <rect key="frame" x="28" y="205" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jinx_head" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-fz-6hV">
+                                <rect key="frame" x="155" y="205" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catilyn_head" translatesAutoresizingMaskIntoConstraints="NO" id="KwO-WH-uez">
+                                <rect key="frame" x="278" y="205" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ekko_head" translatesAutoresizingMaskIntoConstraints="NO" id="eco-c4-mDY">
+                                <rect key="frame" x="75" y="531" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jacey_head" translatesAutoresizingMaskIntoConstraints="NO" id="sou-VP-xOi">
+                                <rect key="frame" x="240" y="531" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.81573365066225167" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="77P-EY-wEN" firstAttribute="top" secondItem="7WM-KT-e7k" secondAttribute="bottom" constant="163" id="4re-GA-2uR"/>
+                            <constraint firstItem="77P-EY-wEN" firstAttribute="top" secondItem="7WM-KT-e7k" secondAttribute="bottom" constant="211" id="4re-GA-2uR"/>
                             <constraint firstItem="77P-EY-wEN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-132" id="6Iv-NW-bgZ"/>
-                            <constraint firstItem="uis-eV-O9a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-19.25" id="8fp-QN-89O"/>
-                            <constraint firstAttribute="bottom" secondItem="01W-44-Mfj" secondAttribute="bottom" constant="479" id="9RU-BW-Nsp"/>
-                            <constraint firstItem="Qo9-Ew-E7C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-66" id="AtJ-LR-jsm"/>
-                            <constraint firstItem="gVz-xd-I9T" firstAttribute="centerX" secondItem="Qo9-Ew-E7C" secondAttribute="centerX" constant="121" id="CQE-Yx-EFa"/>
+                            <constraint firstItem="uis-eV-O9a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-9.25" id="8fp-QN-89O"/>
+                            <constraint firstAttribute="bottom" secondItem="01W-44-Mfj" secondAttribute="bottom" constant="496" id="9RU-BW-Nsp"/>
+                            <constraint firstItem="Qo9-Ew-E7C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-86" id="AtJ-LR-jsm"/>
+                            <constraint firstItem="gVz-xd-I9T" firstAttribute="centerX" secondItem="Qo9-Ew-E7C" secondAttribute="centerX" constant="164" id="CQE-Yx-EFa"/>
                             <constraint firstItem="uis-eV-O9a" firstAttribute="top" secondItem="77P-EY-wEN" secondAttribute="bottom" constant="-44" id="Duy-3R-xYZ"/>
                             <constraint firstItem="01W-44-Mfj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="115" id="EHk-3k-6R9"/>
                             <constraint firstItem="01W-44-Mfj" firstAttribute="top" secondItem="uis-eV-O9a" secondAttribute="bottom" constant="-44" id="OOa-Ka-v3d"/>
                             <constraint firstItem="gVz-xd-I9T" firstAttribute="top" secondItem="Qo9-Ew-E7C" secondAttribute="bottom" constant="-44" id="Wo3-6Q-lRi"/>
-                            <constraint firstItem="Qo9-Ew-E7C" firstAttribute="top" secondItem="01W-44-Mfj" secondAttribute="bottom" constant="64" id="vQf-2B-iui"/>
+                            <constraint firstItem="Qo9-Ew-E7C" firstAttribute="top" secondItem="01W-44-Mfj" secondAttribute="bottom" constant="297" id="vQf-2B-iui"/>
                             <constraint firstItem="7WM-KT-e7k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ykd-0D-n5b"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VNH-vn-Ojj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1120.2898550724638" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="3428.985507246377" y="2.6785714285714284"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="TzP-hd-Zns">
+        <scene sceneID="asL-EC-Hd6">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="boM-9H-hh8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RjK-wM-cWD">
+                <viewController id="XBi-m4-yX0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxw-1k-xdn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-aD-XuK">
-                                <rect key="frame" x="48" y="87" width="72" height="0.0"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinx2" translatesAutoresizingMaskIntoConstraints="NO" id="hao-qI-Fx2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinx" translatesAutoresizingMaskIntoConstraints="NO" id="vF6-GG-6tf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="Knz-hh-Lc9">
-                                <rect key="frame" x="0.0" y="559" width="390" height="298"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopGradient" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-oB-if0">
+                                <rect key="frame" x="0.0" y="-11" width="414" height="188"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jinx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIb-Jg-N4V">
-                                <rect key="frame" x="48" y="95" width="59" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jinx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcp-T6-WIZ">
+                                <rect key="frame" x="64" y="153" width="59" height="35"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHF-uW-Tpb">
-                                <rect key="frame" x="30" y="648" width="331" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nm6-rK-xbH">
+                                <rect key="frame" x="53" y="583" width="308" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Jinx's real name was "Powder". At a young age, then-Powder and her sister Vi Vi were orphaned during a battle between Piltover Crest Piltover and the people of Zaun Crest Zaun. Seeing the girls in distress, Zaunite defender Vander Vander abandoned the battle to keep them safe, taking them away to Zaun. Powder was a curious and clumsy child, often making decisions that would badly affect the people around her. She was constantly teased for this, and it made her hate herself when she made these decisions. Deeply traumatized by the death of her parents, she would have attachment issues, specifically towards her sister Vi. After she caused the deaths of Mylo, Claggor, and Vander and Vi seemingly abandoning her during her most weakest moment, her trauma would become more pronounced, experiencing both auditory and visual hallucinations of Mylo and Claggor's dead voices and bodies. She would put on a veneer of a bubbly and energetic person, only to hide the hurt and trauma of past events. She's also very sarcastic, extroverted with a twisted sense of humor.</mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="E0r-rd-JZY"/>
+                                </constraints>
+                                <string key="text">Jinx's real name was "Powder". At a young age, then-Powder and her sister Vi Vi were orphaned during a battle between Piltover Crest Piltover and the people of Zaun Crest Zaun. Seeing the girls in distress, Zaunite defender Vander Vander abandoned the battle to keep them safe, taking them away to Zaun. Powder was a curious and clumsy child, often making decisions that would badly affect the people around her. She was constantly teased for this, and it made her hate herself when she made these decisions. Deeply traumatized by the death of her parents, she would have attachment issues, specifically towards her sister Vi. After she caused the deaths of Mylo, Claggor, and Vander and Vi seemingly abandoning her during her most weakest moment, her trauma would become more pronounced, experiencing both auditory and visual hallucinations of Mylo and Claggor's dead voices and bodies. She would put on a veneer of a bubbly and energetic person, only to hide the hurt and trauma of past events. She's also very sarcastic, extroverted with a twisted sense of humor.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="0xj-EN-crx">
+                                <rect key="frame" x="0.0" y="650" width="414" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="zgM-Eb-ZBY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="8zL-cK-taa"/>
+                        <viewLayoutGuide key="safeArea" id="Tgf-NK-ndf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bNS-aD-XuK" firstAttribute="leading" secondItem="8zL-cK-taa" secondAttribute="leading" constant="48" id="4PD-1N-mh8"/>
-                            <constraint firstAttribute="bottom" secondItem="Knz-hh-Lc9" secondAttribute="bottom" constant="39" id="6UC-cG-WGU"/>
-                            <constraint firstAttribute="trailing" secondItem="hao-qI-Fx2" secondAttribute="trailing" id="8vI-56-jfQ"/>
-                            <constraint firstAttribute="trailing" secondItem="Knz-hh-Lc9" secondAttribute="trailing" constant="24" id="AaD-0w-YWU"/>
-                            <constraint firstItem="aIb-Jg-N4V" firstAttribute="top" secondItem="bNS-aD-XuK" secondAttribute="bottom" constant="8" id="COl-Nw-Olq"/>
-                            <constraint firstItem="8zL-cK-taa" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aIb-Jg-N4V" secondAttribute="trailing" symbolic="YES" id="EHj-rP-Szy"/>
-                            <constraint firstItem="hao-qI-Fx2" firstAttribute="leading" secondItem="RjK-wM-cWD" secondAttribute="leading" id="I1C-hE-bZS"/>
-                            <constraint firstItem="aIb-Jg-N4V" firstAttribute="leading" secondItem="bNS-aD-XuK" secondAttribute="leading" id="TsT-BC-xXG"/>
-                            <constraint firstItem="hao-qI-Fx2" firstAttribute="top" secondItem="RjK-wM-cWD" secondAttribute="top" id="VLp-0O-aL2"/>
-                            <constraint firstAttribute="bottom" secondItem="hao-qI-Fx2" secondAttribute="bottom" id="lsM-RC-eCq"/>
-                            <constraint firstItem="8zL-cK-taa" firstAttribute="trailing" secondItem="bNS-aD-XuK" secondAttribute="trailing" constant="294" id="mHJ-sY-3kB"/>
-                            <constraint firstItem="bNS-aD-XuK" firstAttribute="top" secondItem="8zL-cK-taa" secondAttribute="top" constant="43" id="pzY-41-wBd"/>
-                            <constraint firstItem="Knz-hh-Lc9" firstAttribute="leading" secondItem="RjK-wM-cWD" secondAttribute="leading" id="wbS-7X-Liw"/>
+                            <constraint firstItem="0xj-EN-crx" firstAttribute="bottom" secondItem="vF6-GG-6tf" secondAttribute="bottom" id="0fQ-Qx-12W"/>
+                            <constraint firstAttribute="bottom" secondItem="vF6-GG-6tf" secondAttribute="bottom" id="5gA-D0-20G"/>
+                            <constraint firstItem="Vcp-T6-WIZ" firstAttribute="top" secondItem="Tgf-NK-ndf" secondAttribute="top" constant="65" id="EQ3-g8-qoL"/>
+                            <constraint firstItem="Uj1-oB-if0" firstAttribute="top" secondItem="Tgf-NK-ndf" secondAttribute="top" constant="-99" id="FFh-kW-nuI"/>
+                            <constraint firstItem="0xj-EN-crx" firstAttribute="leading" secondItem="vF6-GG-6tf" secondAttribute="leading" id="NYh-pc-P0O"/>
+                            <constraint firstItem="vF6-GG-6tf" firstAttribute="leading" secondItem="cxw-1k-xdn" secondAttribute="leading" id="OSH-vd-a4C"/>
+                            <constraint firstItem="vF6-GG-6tf" firstAttribute="top" secondItem="cxw-1k-xdn" secondAttribute="top" id="RO5-OV-QjO"/>
+                            <constraint firstAttribute="trailing" secondItem="Uj1-oB-if0" secondAttribute="trailing" id="WUa-g4-VXV"/>
+                            <constraint firstItem="Nm6-rK-xbH" firstAttribute="centerX" secondItem="cxw-1k-xdn" secondAttribute="centerX" id="ZjF-P3-ylu"/>
+                            <constraint firstItem="Tgf-NK-ndf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vcp-T6-WIZ" secondAttribute="trailing" symbolic="YES" id="cvf-BR-INh"/>
+                            <constraint firstItem="Vcp-T6-WIZ" firstAttribute="leading" secondItem="Tgf-NK-ndf" secondAttribute="leading" constant="64" id="eBO-Ba-zWK"/>
+                            <constraint firstItem="Nm6-rK-xbH" firstAttribute="leading" secondItem="Tgf-NK-ndf" secondAttribute="leading" constant="53" id="n8D-cX-JEA"/>
+                            <constraint firstItem="Uj1-oB-if0" firstAttribute="leading" secondItem="Tgf-NK-ndf" secondAttribute="leading" id="p6U-Aa-SPP"/>
+                            <constraint firstItem="Tgf-NK-ndf" firstAttribute="bottom" secondItem="Uj1-oB-if0" secondAttribute="bottom" constant="636" id="r23-rM-ZRV"/>
+                            <constraint firstAttribute="trailing" secondItem="vF6-GG-6tf" secondAttribute="trailing" id="tp8-Ed-aK5"/>
+                            <constraint firstItem="Tgf-NK-ndf" firstAttribute="bottom" secondItem="Nm6-rK-xbH" secondAttribute="bottom" constant="102" id="ymj-Sh-8N5"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="2vw-WE-kuA"/>
+                    <navigationItem key="navigationItem" id="pIO-Fc-2QY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qYD-TI-hBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tus-ZD-050" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410.14492753623193" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="4491" y="-715"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e6V-UH-Wlm">
             <objects>
                 <viewController id="O9e-hM-G6Y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yb9-6u-GBt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ekko2" translatesAutoresizingMaskIntoConstraints="NO" id="pBf-jG-9sF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="1Dr-EK-YqL">
-                                <rect key="frame" x="0.0" y="544" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopGradient" translatesAutoresizingMaskIntoConstraints="NO" id="zN7-6M-QWR">
                                 <rect key="frame" x="0.0" y="-109" width="414" height="380"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ekko" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-bE-tUo">
-                                <rect key="frame" x="20" y="64" width="70.5" height="35"/>
+                                <rect key="frame" x="20" y="108" width="70.5" height="35"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-i6-fkr">
-                                <rect key="frame" x="31" y="594" width="337" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-i6-fkr">
+                                <rect key="frame" x="31" y="594" width="308" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Ekko was a genius child inventor and worked as an assistant for Benzo Benzo at his pawn shop. He would often eavesdrop on Benzo's more private conversations even when the man would send him away, which made him privy to certain transactions and secrets that he would often share with his friends: Vi Vi, Powder Powder, Mylo Mylo, and Claggor Claggor. Although he never participated in any of their heists, they came to consider him as part of their little gang and eventually gave him the nickname "Little Man." Growing up, Ekko looked up to Vi, who taught him some basic fighting techniques, and often played a game with Powder where she would try to shoot him with a paintball gun.[1] Also, whenever he got covered in grease from work, Vi would be the one to take him down to the junk heap and hose him clean.</mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PWA-VK-Ngj"/>
+                                    <constraint firstAttribute="width" constant="308" id="htg-Pp-SRh"/>
+                                </constraints>
+                                <string key="text">Ekko was a genius child inventor and worked as an assistant for Benzo Benzo at his pawn shop. He would often eavesdrop on Benzo's more private conversations even when the man would send him away, which made him privy to certain transactions and secrets that he would often share with his friends: Vi Vi, Powder Powder, Mylo Mylo, and Claggor Claggor. Although he never participated in any of their heists, they came to consider him as part of their little gang and eventually gave him the nickname "Little Man." Growing up, Ekko looked up to Vi, who taught him some basic fighting techniques, and often played a game with Powder where she would try to shoot him with a paintball gun.[1] Also, whenever he got covered in grease from work, Vi would be the one to take him down to the junk heap and hose him clean.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="1Dr-EK-YqL">
+                                <rect key="frame" x="0.0" y="598" width="414" height="298"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2hr-di-Ju7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,6 +279,7 @@
                             <constraint firstItem="Hfp-bE-tUo" firstAttribute="leading" secondItem="2hr-di-Ju7" secondAttribute="leading" constant="20" id="5PA-0W-eBl"/>
                             <constraint firstItem="Hfp-bE-tUo" firstAttribute="leading" secondItem="2hr-di-Ju7" secondAttribute="leading" constant="20" id="5PM-91-05D"/>
                             <constraint firstItem="pBf-jG-9sF" firstAttribute="top" secondItem="Yb9-6u-GBt" secondAttribute="top" id="5pY-lk-hip"/>
+                            <constraint firstItem="8S8-i6-fkr" firstAttribute="leading" secondItem="2hr-di-Ju7" secondAttribute="leading" constant="31" id="7aZ-ua-6S2"/>
                             <constraint firstItem="Hfp-bE-tUo" firstAttribute="top" secondItem="2hr-di-Ju7" secondAttribute="top" constant="20" id="B99-J1-PQ2"/>
                             <constraint firstAttribute="bottom" secondItem="1Dr-EK-YqL" secondAttribute="bottom" id="Eb1-eS-nE8"/>
                             <constraint firstItem="zN7-6M-QWR" firstAttribute="top" secondItem="Yb9-6u-GBt" secondAttribute="top" constant="-109" id="Fdm-XA-5Ox"/>
@@ -213,97 +290,111 @@
                             <constraint firstItem="2hr-di-Ju7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hfp-bE-tUo" secondAttribute="trailing" symbolic="YES" id="m9Q-US-SSn"/>
                             <constraint firstAttribute="trailing" secondItem="pBf-jG-9sF" secondAttribute="trailing" id="oJ2-HI-gp4"/>
                             <constraint firstItem="1Dr-EK-YqL" firstAttribute="leading" secondItem="Yb9-6u-GBt" secondAttribute="leading" id="oN7-cI-uIF"/>
+                            <constraint firstItem="2hr-di-Ju7" firstAttribute="bottom" secondItem="8S8-i6-fkr" secondAttribute="bottom" constant="91" id="qFY-4x-74S"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TOh-al-OOz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPg-1I-zrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410.14492753623193" y="681.69642857142856"/>
+            <point key="canvasLocation" x="3487" y="-714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hnf-GR-qxy">
             <objects>
                 <viewController id="3Bh-FI-Hnj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bs7-Pm-3WY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacey3" translatesAutoresizingMaskIntoConstraints="NO" id="jg6-7g-gxj">
-                                <rect key="frame" x="12" y="0.0" width="402" height="842"/>
+                                <rect key="frame" x="12" y="0.0" width="402" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopGradient" translatesAutoresizingMaskIntoConstraints="NO" id="nV0-ac-Uj3">
-                                <rect key="frame" x="0.0" y="-72" width="414" height="380"/>
+                                <rect key="frame" x="-14" y="-72" width="428" height="380"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jayce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i64-b3-cQF">
-                                <rect key="frame" x="48" y="60" width="77" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jayce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i64-b3-cQF">
+                                <rect key="frame" x="48" y="157" width="77" height="35"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="IsT-Ob-Z4Z">
-                                <rect key="frame" x="0.0" y="544" width="414" height="298"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BX2-Qw-y3H">
-                                <rect key="frame" x="48" y="590" width="324" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BX2-Qw-y3H">
+                                <rect key="frame" x="62" y="589" width="302" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Not much is known about Jayce's earliest moments in Piltover. At some point his father passed way, leaving the Talis family hammer business to him and his mother Ximena Ximena. When Jayce was young, he and his mother got caught in a snowstorm seemingly with no one around for miles. Just when his mother collapsed, a cloaked man arrived who used magic to warp them a safe distance away from the blizzard. The man left Jayce the crystal he'd used for his spell. This encounter shaped the young Jayce's desire to learn more about magic and to turn his research later in his life to harness magic through science. Being part of House Talis, a family of renowned toolmakers most known for their hammers and the collapsible pocket wrench, most expected Jayce to join their family business.Jayce, however, was determined in his research into science and the Arcane. Eventually, he became a scholar at the Academy in Piltover where he was favored by the Dean and the Head of the Council, Professor Heimerdinger Heimerdinger, and by the Kiramman Clan Crest.png Kirammans who saw his ambition and decided to support him as his patrons.</mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Dkk-e9-xib"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="bFD-j9-JXl"/>
+                                    <constraint firstAttribute="width" constant="302" id="nDG-ZN-5wX"/>
+                                </constraints>
+                                <string key="text">Not much is known about Jayce's earliest moments in Piltover. At some point his father passed way, leaving the Talis family hammer business to him and his mother Ximena Ximena. When Jayce was young, he and his mother got caught in a snowstorm seemingly with no one around for miles. Just when his mother collapsed, a cloaked man arrived who used magic to warp them a safe distance away from the blizzard. The man left Jayce the crystal he'd used for his spell. This encounter shaped the young Jayce's desire to learn more about magic and to turn his research later in his life to harness magic through science. Being part of House Talis, a family of renowned toolmakers most known for their hammers and the collapsible pocket wrench, most expected Jayce to join their family business.Jayce, however, was determined in his research into science and the Arcane. Eventually, he became a scholar at the Academy in Piltover where he was favored by the Dean and the Head of the Council, Professor Heimerdinger Heimerdinger, and by the Kiramman Clan Crest.png Kirammans who saw his ambition and decided to support him as his patrons.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="IsT-Ob-Z4Z">
+                                <rect key="frame" x="0.0" y="515" width="414" height="298"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lzo-Rs-DQN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="i64-b3-cQF" firstAttribute="top" secondItem="lzo-Rs-DQN" secondAttribute="top" constant="69" id="0rF-Aj-I9B"/>
                             <constraint firstAttribute="bottom" secondItem="jg6-7g-gxj" secondAttribute="bottom" id="BNf-rw-78u"/>
+                            <constraint firstItem="lzo-Rs-DQN" firstAttribute="trailing" secondItem="BX2-Qw-y3H" secondAttribute="trailing" constant="50" id="Nio-vD-FK1"/>
                             <constraint firstItem="lzo-Rs-DQN" firstAttribute="trailing" secondItem="i64-b3-cQF" secondAttribute="trailing" constant="289" id="POv-tp-uB1"/>
                             <constraint firstItem="jg6-7g-gxj" firstAttribute="top" secondItem="Bs7-Pm-3WY" secondAttribute="top" id="UwP-sy-JOU"/>
-                            <constraint firstAttribute="bottom" secondItem="IsT-Ob-Z4Z" secondAttribute="bottom" id="WOt-UW-Lhz"/>
+                            <constraint firstItem="BX2-Qw-y3H" firstAttribute="leading" secondItem="lzo-Rs-DQN" secondAttribute="leading" constant="62" id="Whk-os-8jf"/>
                             <constraint firstItem="lzo-Rs-DQN" firstAttribute="trailing" secondItem="jg6-7g-gxj" secondAttribute="trailing" id="cP1-qw-KSY"/>
-                            <constraint firstItem="nV0-ac-Uj3" firstAttribute="leading" secondItem="Bs7-Pm-3WY" secondAttribute="leading" id="djX-GW-HEP"/>
+                            <constraint firstItem="nV0-ac-Uj3" firstAttribute="leading" secondItem="Bs7-Pm-3WY" secondAttribute="leading" constant="-14" id="djX-GW-HEP"/>
+                            <constraint firstItem="lzo-Rs-DQN" firstAttribute="bottom" secondItem="BX2-Qw-y3H" secondAttribute="bottom" constant="96" id="dop-Ao-cgk"/>
                             <constraint firstAttribute="trailing" secondItem="IsT-Ob-Z4Z" secondAttribute="trailing" id="eIs-ta-5fg"/>
                             <constraint firstAttribute="trailing" secondItem="jg6-7g-gxj" secondAttribute="trailing" id="ftM-Ta-0iX"/>
                             <constraint firstItem="nV0-ac-Uj3" firstAttribute="top" secondItem="Bs7-Pm-3WY" secondAttribute="top" constant="-72" id="hde-aA-JVw"/>
                             <constraint firstAttribute="trailing" secondItem="nV0-ac-Uj3" secondAttribute="trailing" id="jVE-dJ-GZ2"/>
                             <constraint firstItem="i64-b3-cQF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lzo-Rs-DQN" secondAttribute="leading" id="jnJ-MN-GFz"/>
                             <constraint firstItem="IsT-Ob-Z4Z" firstAttribute="leading" secondItem="Bs7-Pm-3WY" secondAttribute="leading" id="kag-1f-EKf"/>
+                            <constraint firstItem="IsT-Ob-Z4Z" firstAttribute="bottom" secondItem="lzo-Rs-DQN" secondAttribute="bottom" id="yek-Xf-kKq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NFz-4D-iH3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gM-AA-E6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279.71014492753625" y="681.69642857142856"/>
+            <point key="canvasLocation" x="6202.898550724638" y="2.6785714285714284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uwD-Cc-2rC">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="nYv-gc-rbe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cXP-NV-cP2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vi2" translatesAutoresizingMaskIntoConstraints="NO" id="q15-wA-hun">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-5h-59N">
-                                <rect key="frame" x="20" y="64" width="33" height="34.5"/>
+                                <rect key="frame" x="20" y="108" width="33" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RfZ-02-EaG">
-                                <rect key="frame" x="20" y="610" width="374" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RfZ-02-EaG">
+                                <rect key="frame" x="62" y="589" width="308" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Violet is the elder sister to Powder Powder, both adopted by Vander Vander after the death of their parents in a battle with Piltovan enforcers. She is extremely protective of Powder, often defending her clumsiness against fellow adopted sibling Mylo. A natural brute, she often settles matters with her fists than her head Discontent with the state of the undercity, Violet believes the top siders are selfish and evil. One day, Violet, Powder, Mylo, and Clagger burglarize an apartment in Piltover, which ultimately caused an explosion that forced them to abscond from the scene Piltover wanted to see the culprits brought to justice. As the heist leader, Violet was prepared to surrender herself, but Vander locked her in a room and took the blame instead. From a window, she could see Silco Silco appearing abruptly, slaying enforcers and kidnapping Vander.</mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Sw3-eU-4eh"/>
+                                    <constraint firstAttribute="width" constant="308" id="xfH-S9-pAL"/>
+                                </constraints>
+                                <string key="text">Violet is the elder sister to Powder Powder, both adopted by Vander Vander after the death of their parents in a battle with Piltovan enforcers. She is extremely protective of Powder, often defending her clumsiness against fellow adopted sibling Mylo. A natural brute, she often settles matters with her fists than her head Discontent with the state of the undercity, Violet believes the top siders are selfish and evil. One day, Violet, Powder, Mylo, and Clagger burglarize an apartment in Piltover, which ultimately caused an explosion that forced them to abscond from the scene Piltover wanted to see the culprits brought to justice. As the heist leader, Violet was prepared to surrender herself, but Vander locked her in a room and took the blame instead. From a window, she could see Silco Silco appearing abruptly, slaying enforcers and kidnapping Vander.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="pqs-eY-4fd">
+                                <rect key="frame" x="0.0" y="598" width="414" height="298"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N2E-g4-U3x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -313,12 +404,17 @@
                             <constraint firstAttribute="trailing" secondItem="q15-wA-hun" secondAttribute="trailing" id="K6r-We-cUh"/>
                             <constraint firstItem="q15-wA-hun" firstAttribute="leading" secondItem="cXP-NV-cP2" secondAttribute="leading" id="PeU-Xf-5uq"/>
                             <constraint firstAttribute="bottom" secondItem="q15-wA-hun" secondAttribute="bottom" id="UEW-1K-Jq8"/>
+                            <constraint firstItem="N2E-g4-U3x" firstAttribute="bottom" secondItem="RfZ-02-EaG" secondAttribute="bottom" constant="96" id="UYE-Zx-lAF"/>
                             <constraint firstAttribute="bottom" secondItem="q15-wA-hun" secondAttribute="bottom" id="UgF-E4-EH9"/>
                             <constraint firstItem="q15-wA-hun" firstAttribute="top" secondItem="cXP-NV-cP2" secondAttribute="top" id="VOD-b0-dbR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pqs-eY-4fd" secondAttribute="trailing" constant="-20" id="YR3-cF-ObH"/>
+                            <constraint firstItem="RfZ-02-EaG" firstAttribute="leading" secondItem="M9e-5h-59N" secondAttribute="leading" constant="42" id="cYQ-1R-QCL"/>
                             <constraint firstItem="q15-wA-hun" firstAttribute="leading" secondItem="cXP-NV-cP2" secondAttribute="leading" id="iii-HG-RYm"/>
                             <constraint firstItem="N2E-g4-U3x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M9e-5h-59N" secondAttribute="trailing" symbolic="YES" id="pUm-le-W0h"/>
                             <constraint firstItem="M9e-5h-59N" firstAttribute="leading" secondItem="N2E-g4-U3x" secondAttribute="leading" constant="20" id="pek-bN-A31"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pqs-eY-4fd" secondAttribute="bottom" constant="-83" id="qvU-M2-eoh"/>
                             <constraint firstItem="q15-wA-hun" firstAttribute="top" secondItem="cXP-NV-cP2" secondAttribute="top" id="u8Y-3l-Xvj"/>
+                            <constraint firstItem="pqs-eY-4fd" firstAttribute="leading" secondItem="cXP-NV-cP2" secondAttribute="leadingMargin" constant="-20" id="wmW-wS-rz3"/>
                             <constraint firstAttribute="trailing" secondItem="q15-wA-hun" secondAttribute="trailing" id="yjJ-uV-2gP"/>
                         </constraints>
                     </view>
@@ -326,18 +422,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gt-3e-1Iu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279.71014492753625" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="4397.1014492753629" y="2.6785714285714284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oZw-ed-r8p">
             <objects>
                 <viewController id="HpV-aU-hjk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRP-Ge-rIj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caitlyn" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-bd-3UK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caitly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tE-n4-Tlm">
                                 <rect key="frame" x="20" y="20" width="75" height="34.5"/>
@@ -345,15 +441,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YRV-Oq-qe8">
-                                <rect key="frame" x="28" y="603" width="342" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YRV-Oq-qe8">
+                                <rect key="frame" x="53" y="598" width="308" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Caitlyn Kiramman is a scion of the Kiramman Clan Crest.png Kiramman Clan, one of the ruling houses of Piltover Crest icon.png Piltover. Eager to see the world for herself and disdainful of the traditional elitist lifestyle that her parents had raised her in, Caitlyn joined the Enforcers as a young woman to make a name for herself. When Marcus Marcus, the Sheriff of the Enforcers, and her parents-for very different reasons-started blocking her efforts to further investigate an undercity conspiracy, Caitlyn set off on her own to find answers, only to get much more than she bargained for. Born into the wealthy Kiramman family, Caitlyn always felt that her parents, especially her mother her mother, sheltered her, thus hindering her personal growth in their hopes of protecting her and convincing her to follow in her footsteps to effectively carry on their family name Caitlyn grew to become a very skilled marksman. Once, she joined a competition in Piltover and won the trophy. She confronted her closest opponent in the competition, the Piltover Police Department Sheriff Grayson Grayson, about throwing the competition for her, suspecting that her parents had paid her to do it. Grayson admitted to letting her win only because she felt that the girl deserved it, not because ofher parents, then asked her what she was shooting for.</mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="WBf-I1-tvk"/>
+                                    <constraint firstAttribute="height" constant="128" id="nUw-oL-bxy"/>
+                                </constraints>
+                                <string key="text">Caitlyn Kiramman is a scion of the Kiramman Clan Crest.png Kiramman Clan, one of the ruling houses of Piltover Crest icon.png Piltover. Eager to see the world for herself and disdainful of the traditional elitist lifestyle that her parents had raised her in, Caitlyn joined the Enforcers as a young woman to make a name for herself. When Marcus Marcus, the Sheriff of the Enforcers, and her parents-for very different reasons-started blocking her efforts to further investigate an undercity conspiracy, Caitlyn set off on her own to find answers, only to get much more than she bargained for. Born into the wealthy Kiramman family, Caitlyn always felt that her parents, especially her mother her mother, sheltered her, thus hindering her personal growth in their hopes of protecting her and convincing her to follow in her footsteps to effectively carry on their family name Caitlyn grew to become a very skilled marksman. Once, she joined a competition in Piltover and won the trophy. She confronted her closest opponent in the competition, the Piltover Police Department Sheriff Grayson Grayson, about throwing the competition for her, suspecting that her parents had paid her to do it. Grayson admitted to letting her win only because she felt that the girl deserved it, not because ofher parents, then asked her what she was shooting for.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="JZt-f9-saZ">
+                                <rect key="frame" x="0.0" y="598" width="414" height="298"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A7q-9g-tJZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -362,7 +464,13 @@
                             <constraint firstItem="TVx-bd-3UK" firstAttribute="leading" secondItem="eRP-Ge-rIj" secondAttribute="leading" id="CrP-aJ-Z6s"/>
                             <constraint firstItem="9tE-n4-Tlm" firstAttribute="leading" secondItem="eRP-Ge-rIj" secondAttribute="leading" constant="20" id="D2c-EP-f3c"/>
                             <constraint firstItem="9tE-n4-Tlm" firstAttribute="top" secondItem="eRP-Ge-rIj" secondAttribute="top" constant="20" id="Tjv-n3-Xfl"/>
+                            <constraint firstItem="YRV-Oq-qe8" firstAttribute="leading" secondItem="A7q-9g-tJZ" secondAttribute="leading" constant="28" id="h0r-xt-Hk6"/>
+                            <constraint firstAttribute="trailing" secondItem="JZt-f9-saZ" secondAttribute="trailing" id="ltC-Dq-72M"/>
+                            <constraint firstAttribute="bottom" secondItem="JZt-f9-saZ" secondAttribute="bottom" id="quj-e8-Jfk"/>
                             <constraint firstAttribute="bottom" secondItem="TVx-bd-3UK" secondAttribute="bottom" id="rpX-7g-CIh"/>
+                            <constraint firstItem="YRV-Oq-qe8" firstAttribute="top" secondItem="A7q-9g-tJZ" secondAttribute="top" constant="515" id="teW-dg-Low"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9tE-n4-Tlm" secondAttribute="trailing" constant="20" symbolic="YES" id="vPI-Pj-Eee"/>
+                            <constraint firstItem="JZt-f9-saZ" firstAttribute="leading" secondItem="eRP-Ge-rIj" secondAttribute="leading" id="xMF-19-q0O"/>
                             <constraint firstAttribute="trailing" secondItem="TVx-bd-3UK" secondAttribute="trailing" id="yNl-xf-hjZ"/>
                         </constraints>
                     </view>
@@ -370,17 +478,288 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvS-4o-ZVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004.3478260869566" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="5360.8695652173919" y="2.6785714285714284"/>
+        </scene>
+        <!--Heros-->
+        <scene sceneID="Ku4-hk-RRK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dPu-1e-kHq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Heros" selectedImage="person.fill" catalog="system" id="oT8-7Q-4Qq">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J5Z-Lq-Pap">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dfe-bi-ZrD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9w-uU-Klg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="333"/>
+        </scene>
+        <!--Story-->
+        <scene sceneID="5SA-v3-ygk">
+            <objects>
+                <navigationController id="tfe-ui-VvT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Story" selectedImage="book.fill" catalog="system" id="sfF-Ts-EAn">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e80-MX-Tft">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i42-QB-eeD" kind="relationship" relationship="rootViewController" id="QPO-n0-wt0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzr-ej-6I3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="1076"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="B27-ZP-Nm9">
+            <objects>
+                <navigationController id="5nQ-js-91x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home Page" selectedImage="house.fill" catalog="system" id="FQt-eP-HuP">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WwA-e2-krI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QFJ-Hj-BW3" kind="relationship" relationship="rootViewController" id="tOx-uE-N60"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZZ-1q-WBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-340"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="gBm-DH-lSr">
+            <objects>
+                <navigationController id="BW3-Nb-qDw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video" selectedImage="video.fill" catalog="system" id="07g-ef-bb5">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hLJ-FQ-eYo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HxQ-AS-ywX" kind="relationship" relationship="rootViewController" id="gXJ-OV-blI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLl-gA-hHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="1771"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ane-0m-0rT">
+            <objects>
+                <viewController id="QFJ-Hj-BW3" customClass="ViewController" customModule="Demo3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="214-cY-Cg0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover2" translatesAutoresizingMaskIntoConstraints="NO" id="9fE-QQ-f2z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arcane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sal-8l-Oef">
+                                <rect key="frame" x="145.5" y="97" width="123" height="48"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uCQ-9r-DfY"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.81573365070000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sal-8l-Oef" firstAttribute="centerX" secondItem="214-cY-Cg0" secondAttribute="centerX" id="8GJ-Oa-d6E"/>
+                            <constraint firstAttribute="bottom" secondItem="9fE-QQ-f2z" secondAttribute="bottom" id="Wxm-y9-AT7"/>
+                            <constraint firstItem="9fE-QQ-f2z" firstAttribute="top" secondItem="214-cY-Cg0" secondAttribute="top" id="a8O-Ax-dSW"/>
+                            <constraint firstItem="sal-8l-Oef" firstAttribute="top" secondItem="uCQ-9r-DfY" secondAttribute="top" constant="9" id="cZd-yg-e4v"/>
+                            <constraint firstItem="sal-8l-Oef" firstAttribute="centerX" secondItem="9fE-QQ-f2z" secondAttribute="centerX" id="dsd-g4-nqL"/>
+                            <constraint firstItem="9fE-QQ-f2z" firstAttribute="leading" secondItem="214-cY-Cg0" secondAttribute="leading" id="vY3-5Q-fRQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QEs-Lx-ucm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAi-ai-iZ2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5652173913045" y="-340.17857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lhN-fT-tXU">
+            <objects>
+                <viewController id="i42-QB-eeD" customClass="ViewController" customModule="Demo3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Pt-z6-F1b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="story" highlightedImage="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="zFl-OS-k1M">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-ha-Ak7">
+                                <rect key="frame" x="161" y="97" width="92" height="48"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rwu-6H-bsg">
+                                <rect key="frame" x="100" y="250" width="214" height="482"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="482" id="wfH-Pk-H8P"/>
+                                </constraints>
+                                <string key="text">Netflix’s Arcane series explores the backstories behind many of its League of Legends characters and makes the deliberate choice to tell those stories chronologically - avoiding ruining its narrative. Particularly when looking at the relationship between Vi and Jinx, the choice to avoid breaking up the narrative with flashbacks proves to be the right storytelling choice. Players of the League of Legends games have long theorized that the girls were sisters, but the series is the first time that theory has been revealed in canon material. Since the games don’t explore or even confirm the origin of the girls’ complex relationship, it’s surprising that Netflix's Arcane devoted its first few episodes to confirming that theory instead of throwing in those details through flashbacks. Based on the world behind League of Legends, Arcane dives into the delicate balance between the rich, utopian city of Piltover Crest icon.png Piltover and the seedy, oppressed underground of Zaun Crest icon.png Zaun. Known across Runeterra as the "city of progress," many of the most brilliant minds call these cities home. But the creation of hextech, a way for any person to control magical energy, threatens that balance. The story follows the origins of two iconic League champions-and the power that will tear them apart. Like the game on which it is based, Arcane is aimed at a "16+" audience and will deal with some more adult subject matter.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BottomGradient" translatesAutoresizingMaskIntoConstraints="NO" id="9x9-LI-af1">
+                                <rect key="frame" x="-35" y="250" width="536" height="684"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="684" id="R8T-fe-Vgc"/>
+                                    <constraint firstAttribute="width" constant="536" id="vwI-DP-my1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="opK-rU-tRY"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.81573365070000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rwu-6H-bsg" firstAttribute="leading" secondItem="opK-rU-tRY" secondAttribute="leading" constant="100" id="1DY-UM-Ow0"/>
+                            <constraint firstItem="zFl-OS-k1M" firstAttribute="top" secondItem="0Pt-z6-F1b" secondAttribute="top" id="4AY-vK-jYj"/>
+                            <constraint firstItem="rbd-ha-Ak7" firstAttribute="centerX" secondItem="Rwu-6H-bsg" secondAttribute="centerX" id="LH3-Lz-8oV"/>
+                            <constraint firstItem="Rwu-6H-bsg" firstAttribute="centerX" secondItem="0Pt-z6-F1b" secondAttribute="centerX" id="MGp-X4-IAZ"/>
+                            <constraint firstItem="rbd-ha-Ak7" firstAttribute="top" secondItem="opK-rU-tRY" secondAttribute="top" constant="9" id="Nkc-gs-Lre"/>
+                            <constraint firstItem="Rwu-6H-bsg" firstAttribute="top" secondItem="9x9-LI-af1" secondAttribute="top" id="WSU-rV-58j"/>
+                            <constraint firstAttribute="bottom" secondItem="zFl-OS-k1M" secondAttribute="bottom" id="ZTu-C2-5g9"/>
+                            <constraint firstItem="zFl-OS-k1M" firstAttribute="leading" secondItem="0Pt-z6-F1b" secondAttribute="leading" id="acK-Fi-v70"/>
+                            <constraint firstItem="opK-rU-tRY" firstAttribute="bottom" secondItem="Rwu-6H-bsg" secondAttribute="bottom" constant="81" id="cy0-Pi-nYi"/>
+                            <constraint firstItem="rbd-ha-Ak7" firstAttribute="centerX" secondItem="zFl-OS-k1M" secondAttribute="centerX" id="qqG-p3-W4m"/>
+                            <constraint firstItem="9x9-LI-af1" firstAttribute="leading" secondItem="0Pt-z6-F1b" secondAttribute="leadingMargin" constant="-55" id="zjY-3Y-VnM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FHr-kL-DFb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFJ-Zx-sYY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="1074.1071428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RDK-y5-ETi">
+            <objects>
+                <viewController id="HxQ-AS-ywX" customClass="ViewController" customModule="Demo3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7y-Tr-lEj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-uY-ZQf">
+                                <rect key="frame" x="181" y="280" width="53" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Vi">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="HxQ-AS-ywX" eventType="touchUpInside" id="Luu-xZ-ugr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKi-a1-etL">
+                                <rect key="frame" x="299" y="280" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jinx">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonJinx:" destination="HxQ-AS-ywX" eventType="touchUpInside" id="tUf-qs-6ia"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roK-ir-uxd">
+                                <rect key="frame" x="147.5" y="88" width="119" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="no8-9Z-Ul6">
+                                <rect key="frame" x="20" y="280" width="124" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Caitlyn">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonCaitlyn:" destination="HxQ-AS-ywX" eventType="touchUpInside" id="s29-MF-AMt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guQ-63-hAB">
+                                <rect key="frame" x="93" y="423" width="92" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ekko">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonEkko:" destination="HxQ-AS-ywX" eventType="touchUpInside" id="YpD-OS-eih"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-35-aw6">
+                                <rect key="frame" x="225" y="423" width="109" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jayce">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonJayce:" destination="HxQ-AS-ywX" eventType="touchUpInside" id="yue-WC-PR7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mBo-xF-UCK"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NB9-fK-IqZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7m-Bh-uUK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="1770.5357142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="BottomGradient" width="414" height="298"/>
         <image name="Caitlyn" width="1844" height="2130"/>
+        <image name="Ekko_head" width="1200" height="1266"/>
         <image name="TopGradient" width="414" height="380"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="catilyn_head" width="1400" height="788"/>
+        <image name="cover2" width="736" height="1308"/>
         <image name="ekko2" width="2048" height="2048"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="jacey3" width="402" height="706"/>
-        <image name="jinx2" width="1660" height="2046"/>
+        <image name="jacey_head" width="400" height="400"/>
+        <image name="jinx" width="308" height="560"/>
+        <image name="jinx_head" width="1920" height="1080"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="story" width="1280" height="720"/>
         <image name="vi2" width="2118" height="1996"/>
+        <image name="vi_head" width="780" height="438"/>
+        <image name="video.fill" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

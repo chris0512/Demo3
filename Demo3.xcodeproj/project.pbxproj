@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83212895287ED7D90062C7A1 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83212894287ED7D90062C7A1 /* WebViewViewController.swift */; };
 		83C38A3028773872003489DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C38A2F28773872003489DA /* AppDelegate.swift */; };
 		83C38A3228773872003489DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C38A3128773872003489DA /* SceneDelegate.swift */; };
 		83C38A3428773872003489DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C38A3328773872003489DA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83212894287ED7D90062C7A1 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		83C38A2C28773872003489DA /* Demo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C38A2F28773872003489DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C38A3128773872003489DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				83C38A2F28773872003489DA /* AppDelegate.swift */,
 				83C38A3128773872003489DA /* SceneDelegate.swift */,
 				83C38A3328773872003489DA /* ViewController.swift */,
+				83212894287ED7D90062C7A1 /* WebViewViewController.swift */,
 				83C38A3528773872003489DA /* Main.storyboard */,
 				83C38A3828773874003489DA /* Assets.xcassets */,
 				83C38A3A28773874003489DA /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				83C38A3428773872003489DA /* ViewController.swift in Sources */,
 				83C38A3028773872003489DA /* AppDelegate.swift in Sources */,
+				83212895287ED7D90062C7A1 /* WebViewViewController.swift in Sources */,
 				83C38A3228773872003489DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
